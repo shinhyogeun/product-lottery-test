@@ -2,10 +2,14 @@ import type { Product } from "@/types/product"
 
 // 이미지 URL 상수
 const IMAGE_URLS = {
-  LAPTOP_1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTiiLdu_DQDMQUpR-3wk59STw_Yxd0x5OVqw&s",
+  LAPTOP_1: "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111932_sp809mbp16touch-space-2019.jpeg",
+  LAPTOP_2: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTQwo5T3vf3EGSHgfP1FRf1jCbqj9Gc0N-ilqFsZNdoxEbpYbsBAk5CfvI_WMn3k5hilmz4-mehRmFvQoY5U8wNktPfJKmTorKY5zIewVrK4zx0wQ8u_sELHDBgXtiWH7NcMFtEoA&usqp=CAc",  
   MONITOR_1:
-    "https://sketch-cdn.imgix.net/assets/blog/what-is-a-mockup-header%402x.png?ixlib=rb-4.1.0&fit=crop&dpr=2&w=1200&h=512&q=100&fm=jpg&auto=format&s=ab6b6be50b91ab268c23e93b87b01099",
-  CHAIR_1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzmz5mRBtfU4cGv8e6GeDe4VPRHOBTGFFtqA&s",
+    "https://cdn-optimized.imweb.me/upload/S202107164fd70c6c59bf5/6b8c787e0551f.jpg?w=500",
+  MONITOR_2:"https://d21x3meyyr2jva.cloudfront.net/image_temp/1667286843000_%EB%AA%A8%EB%8B%88%ED%84%B0_%EA%B2%8C%EC%9D%B4%EB%B0%8D%EC%9A%A9.png",
+  MONITOR_3:"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSmHjtckWaX6zX6q-VCBunWgPdTrsnwNTLfs32bBjrkHn89OhKIitWEi2VQSd99wg-QLsKnIu8TEU1Jmn83WAo3OKv6wqMs2xYx_u72qLJPWvuy_SAkikYztgiph7pNTm3hY8AMLg&usqp=CAc",
+  CHAIR_1: "https://d2t72fqhhsdts3.cloudfront.net/lomad/img/Product/351/sharelink/H1KEvzTmL8IsPzS6wC2hQVe7rOiWKTQgV5MWA186.png",
+  CHAIR_2: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxEt3qYtNr39M00zQmltArZebinjSUOxECM5nlcy_43PVGRSoslg&s&ec=72940544",
 }
 
 // 현재 날짜로부터 n일 후의 날짜를 생성하는 함수
@@ -41,7 +45,7 @@ export const products: Product[] = [
     id: "2",
     title: "LG 울트라기어 게이밍 모니터 27인치",
     description: "144Hz 주사율, 1ms 응답속도, HDR 지원 게이밍 모니터로 몰입감 있는 게임 경험을 제공합니다.",
-    image: IMAGE_URLS.MONITOR_1,
+    image: IMAGE_URLS.MONITOR_2,
     category: "monitor",
     features: ["144Hz", "1ms 응답속도", "HDR", "G-Sync"],
     applicants: 780,
@@ -83,7 +87,7 @@ export const products: Product[] = [
     id: "5",
     title: "델 S2722DGM 게이밍 모니터",
     description: "27인치 QHD 해상도, 165Hz 주사율, 1ms 응답속도의 커브드 게이밍 모니터입니다.",
-    image: IMAGE_URLS.MONITOR_1,
+    image: IMAGE_URLS.MONITOR_3,
     category: "monitor",
     features: ["QHD", "165Hz", "커브드", "1ms 응답속도"],
     applicants: 560,
@@ -97,7 +101,7 @@ export const products: Product[] = [
     id: "6",
     title: "시디즈 T50 사무용 의자",
     description: "인체공학적 설계와 통기성 좋은 메쉬 소재로 제작된 고급 사무용 의자입니다.",
-    image: IMAGE_URLS.CHAIR_1,
+    image: IMAGE_URLS.CHAIR_2,
     category: "chair",
     features: ["인체공학", "메쉬 소재", "5년 보증", "헤드레스트"],
     applicants: 890,
@@ -111,7 +115,7 @@ export const products: Product[] = [
     id: "7",
     title: "레노버 씽크패드 X1 카본",
     description: "14인치 FHD 디스플레이, 인텔 i7, 16GB RAM, 1TB SSD의 비즈니스용 노트북입니다.",
-    image: IMAGE_URLS.LAPTOP_1,
+    image: IMAGE_URLS.LAPTOP_2,
     category: "laptop",
     features: ["인텔 i7", "16GB RAM", "1TB SSD", "카본 소재"],
     applicants: 1005,
